@@ -4,7 +4,7 @@ const app = require('../app')
 describe('Default Endpoint', () => {
   it('should return status 200', async () => {
     const res = await request(app)
-      .get('/')
+      .get('/users')
     expect(res.statusCode).toEqual(200)
   })
 })
